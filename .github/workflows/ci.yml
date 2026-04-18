@@ -74,7 +74,6 @@ jobs:
       - name: Run tests with coverage
         run: |
           pytest tests/ \
-            --cov=src/calculator \
-            --cov=src/validator \
+            --cov=src \
             --cov-report=term-missing \
             --cov-fail-under=80
