@@ -199,4 +199,3 @@ class TestValidateInteger:
 
     def test_string_float(self):
         assert validate_integer("6.7") is False
-        
