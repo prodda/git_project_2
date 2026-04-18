@@ -9,6 +9,7 @@ from validator import (
     validate_positive, validate_non_negative, validate_integer,
 )
 
+
 class TestAdd:
     def test_positive(self):
         assert add(2, 3) == 5
@@ -105,6 +106,8 @@ class TestFactorial:
     def test_negative(self):
         with pytest.raises(ValueError, match="negative number"):
             factorial(-3)
+
+
 class TestValidateNumber:
     def test_integer_string(self):
         assert validate_number("42") is True
