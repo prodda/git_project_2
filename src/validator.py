@@ -50,3 +50,4 @@ def validate_integer(n):
         return num == int(num)
     except (ValueError, TypeError):
         return False
+    
