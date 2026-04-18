@@ -49,7 +49,7 @@ jobs:
 
       - name: Lint with flake8
         run: |
-          flake8 calculator.py validator.py tests/ \
+          flake8 src/calculator.py src/validator.py tests/ \
             --max-line-length=100 \
             --statistics
 
